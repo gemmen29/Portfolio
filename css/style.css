@@ -8,7 +8,7 @@ body {
   background-color: #e5e5e5;
 }
 
-header {
+header nav {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
