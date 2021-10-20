@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,4 +21,46 @@ nav h1 {
   color: #6070ff;
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.header {
+  background-image: url("../images/Header-shapes-mobile.svg");
+  height: 718px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10%;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  color: #172b4d;
+  width: 90%;
+  font-weight: 700;
+}
+
+.header p {
+  color: #344563;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.header a {
+  text-decoration: none;
+  color: #7f8cff;
+  padding-top: 3px;
+  padding-bottom: 23px;
+}
+
+.header .social a {
+  padding-right: 13px;
+  color: #505f79;
 }
