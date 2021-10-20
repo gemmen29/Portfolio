@@ -7,8 +7,8 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #ffffff;
-  align-items:center;
+  background-color: #fff;
+  align-items: center;
   padding-left: 8%;
   padding-right: 8%;
 }
