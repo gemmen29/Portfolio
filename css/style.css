@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items:center;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+nav h1 {
+  color: #6070ff;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
