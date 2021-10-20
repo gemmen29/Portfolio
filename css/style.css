@@ -24,6 +24,10 @@ nav h1 {
   font-weight: 700;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 .header {
   background-image: url("../images/Header-shapes-mobile.svg");
   height: 718px;
