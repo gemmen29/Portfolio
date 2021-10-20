@@ -8,7 +8,7 @@ body {
   background-color: #e5e5e5;
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -17,14 +17,14 @@ nav {
   padding-right: 8%;
 }
 
-nav h1 {
+header h1 {
   color: #6070ff;
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
-nav a {
+header a {
   text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ nav a {
   font-weight: 300;
 }
 
-.header a {
+.header > a {
   text-decoration: none;
   color: #7f8cff;
   padding-top: 3px;
@@ -65,6 +65,18 @@ nav a {
 }
 
 .header .social a {
-  padding-right: 13px;
   color: #505f79;
 }
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
