@@ -187,6 +187,16 @@ header a {
   padding-bottom: 10px;
 }
 
+.about .header .lets-connect {
+  text-decoration: none;
+  color: #7f8cff;
+  padding-top: 3px;
+  padding-bottom: 23px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .about .header .about-title {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -255,6 +265,11 @@ header a {
   width: 84%;
   margin: 0 auto;
   text-align: center;
+}
+
+.about .languages ul {
+  margin: 0;
+  padding: 0;
 }
 
 .about .languages .content {
