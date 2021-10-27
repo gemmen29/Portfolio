@@ -1,7 +1,7 @@
 /* Main style */
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -23,12 +23,13 @@ header nav {
 header h1 {
   color: #6070ff;
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
 header a {
   text-decoration: none;
+  display: block;
 }
 
 /* Main style */
@@ -49,7 +50,7 @@ header a {
 
 .header h1 {
   font-size: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #172b4d;
   width: 90%;
   font-weight: 700;
@@ -59,7 +60,7 @@ header a {
   color: #344563;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
@@ -101,6 +102,11 @@ header a {
   padding: 16px;
 }
 
+.project .project-body {
+  display: flex;
+  flex-direction: column;
+}
+
 .project img {
   border-radius: 8px;
   height: 220px;
@@ -112,6 +118,7 @@ header a {
   margin: 0;
   padding: 15px 0;
   align-items: center;
+  display: flex;
 }
 
 .project ul li {
@@ -120,11 +127,10 @@ header a {
   padding: 4px 12px;
   border-radius: 8px;
   color: #6070ff;
-  float: left;
 }
 
 .project .project-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 32px;
   color: #172b4d;
@@ -137,7 +143,7 @@ header a {
 .project p {
   padding: 0 3px;
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -151,7 +157,7 @@ header a {
   justify-content: space-between;
   align-items: center;
   width: 260px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #344563;
   padding: 0 2px;
@@ -181,13 +187,12 @@ header a {
 .about {
   background-color: #fff;
   padding-bottom: 114px;
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .about .header {
   background-image: none;
-  height: auto;
-  padding-bottom: 10px;
 }
 
 .about .header .lets-connect {
@@ -201,7 +206,7 @@ header a {
 }
 
 .about .header .about-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 32px;
   color: #172b4d;
@@ -243,7 +248,7 @@ header a {
 }
 
 .about .languages .item div {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 500;
   line-height: 24px;
@@ -264,8 +269,8 @@ header a {
 .about .languages hr {
   color: #dfe1e6;
   height: 1px;
-  width: 84%;
-  margin: 0 auto;
+  width: 86%;
+  margin: 2px auto;
   text-align: center;
 }
 
@@ -289,63 +294,62 @@ header a {
   background-color: #f7f7f9;
   border-radius: 8px;
   padding: 0 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #253858;
 }
 
-.line {
-  color: #dfe1e6;
+/* Footer section style */
+.footer {
+  background-color: #fff;
+  height: 100%;
 }
 
-footer {
+.footer .footer-content {
   background-color: #6070ff;
   border-top-left-radius: 64px;
   padding-bottom: 8px;
-  background-image: url('../images/contact-form.png');
+  background-image: url("../images/contact-form.png");
   background-size: 265px 724px;
   background-repeat: no-repeat;
   background-position: 123px 21px;
 }
 
-.ftr-div {
-  background-color: #fff;
-  margin-top: -33px;
-  height: 100%;
-}
-
-.cnt-form {
+.footer .footer-title {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   color: #fff;
   text-align: center;
   padding-top: 114px;
+  margin: 0;
 }
 
-.container-form {
+.footer .container-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 24px;
 }
 
-.cnt-text {
+.footer .cnt-text {
   color: #ebebff;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  margin-top: 12px;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
   margin-bottom: 2.5em;
 }
 
-.form-field {
+.footer .form-field {
   width: 100%;
   margin-bottom: 20px;
 }
 
-input[type="text"],
+.footer input[type="text"],
 input[type="email"] {
   height: 48px;
   border-radius: 8px;
@@ -356,7 +360,7 @@ input[type="email"] {
   padding: 1em;
 }
 
-textarea {
+.footer textarea {
   height: 140px;
   color: #172b4d;
   font-size: 15px;
@@ -364,7 +368,7 @@ textarea {
   padding: 1em;
 }
 
-#line {
+.footer #line {
   margin: 0 auto;
   margin-top: 2rem;
   height: 5px;
@@ -373,6 +377,7 @@ textarea {
   border-radius: 10px;
 }
 
+/* General Style */
 .btn {
   margin-top: 14px;
   padding: 16px;
@@ -406,4 +411,16 @@ button[disabled] {
   background-color: #fff;
   cursor: not-allowed;
   box-shadow: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
 }
