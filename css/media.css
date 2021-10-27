@@ -8,6 +8,16 @@
     display: none;
   }
 
+  .header > a {
+    text-decoration: none;
+    color: #7f8cff;
+    padding-top: 3px;
+    padding-bottom: 23px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
   header .header-links a {
     text-decoration: none;
     font-style: normal;
@@ -23,7 +33,6 @@
     background-image: url("../images/Header-shapes.png");
     height: 846px;
     width: 100%;
-    background-size: cover;
     background-position: 20px 73px;
     padding-left: 18%;
     border-bottom-left-radius: 64px;
@@ -31,7 +40,6 @@
   }
 
   .header h1 {
-    font-size: 40px;
     font-family: "Poppins", sans-serif;
     color: #172b4d;
     width: 55%;
@@ -46,16 +54,6 @@
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-  }
-
-  .header > a {
-    text-decoration: none;
-    color: #7f8cff;
-    padding-top: 3px;
-    padding-bottom: 23px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
   }
 
   /* My Projects section style */
@@ -157,7 +155,7 @@
 
   /* Footer section style */
   .footer .footer-content {
-    background-size: 95% 718px; 
+    background-size: 95% 718px;
     background-image: url("../images/contact-form-desktop.png");
     background-position: 40px 40px;
     padding-bottom: 139px;
