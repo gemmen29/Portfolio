@@ -1,0 +1,183 @@
+@media only screen and (min-width: 1024px) {
+  /* Nav style */
+  header .header-links {
+    display: flex;
+  }
+
+  header .header-mobile {
+    display: none;
+  }
+
+  .header > a {
+    text-decoration: none;
+    color: #7f8cff;
+    padding-top: 3px;
+    padding-bottom: 23px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  header .header-links a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    margin-right: 24px;
+  }
+
+  /* Header section style */
+  .header {
+    background-image: url("../images/Header-shapes.png");
+    height: 846px;
+    width: 100%;
+    background-position: 20px 73px;
+    padding-left: 18%;
+    border-bottom-left-radius: 64px;
+    background-size: 98% 630px;
+  }
+
+  .header h1 {
+    font-family: "Poppins", sans-serif;
+    color: #172b4d;
+    width: 55%;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .header p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  /* My Projects section style */
+  .my-projects {
+    padding: 142px 60px;
+  }
+
+  .project {
+    flex-direction: row;
+    grid-gap: 20px;
+  }
+
+  .project:nth-child(2),
+  .project:nth-child(4) {
+    flex-direction: row-reverse;
+    padding-left: 50px;
+  }
+
+  .project img {
+    border-radius: 8px;
+    height: 370px;
+    width: 42%;
+  }
+
+  .project .project-title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .project p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 496px;
+    margin-top: 32px;
+  }
+
+  .project .project-sub-header {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 297px;
+  }
+
+  .project .project-details {
+    margin-top: 15px;
+  }
+
+  /* About Us section style */
+  .about {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about .header {
+    margin: 0;
+    padding: 0;
+    padding-left: 70px;
+    width: 50%;
+    height: 600px;
+  }
+
+  .about .header .about-title {
+    margin-top: 60px;
+  }
+
+  .about .languages {
+    display: grid;
+    width: 50%;
+  }
+
+  .about .languages hr {
+    width: 86%;
+    margin: 2px auto;
+    text-align: center;
+  }
+
+  .about .languages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 25px;
+    margin: 10px 0;
+  }
+
+  .about .languages .content {
+    padding: 0;
+    margin: 0 7px;
+  }
+
+  .about .languages .content div {
+    padding: 0;
+  }
+
+  .about .languages .content > div {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 9px;
+    line-height: 20px;
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Footer section style */
+  .footer .footer-content {
+    background-size: 96% 705px;
+    background-image: url("../images/contact-form-desktop.png");
+    background-position: 40px 40px;
+    padding-bottom: 139px;
+  }
+
+  .footer form {
+    text-align: center;
+  }
+
+  .footer .container-form {
+    padding: 0 25%;
+  }
+
+  .footer .form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer #line {
+    display: none;
+  }
+}
