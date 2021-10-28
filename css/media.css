@@ -4,6 +4,25 @@
     display: flex;
   }
 
+  .rotate-logo:hover {
+    animation-name: rotateAnimation;
+    animation-duration: 2s;
+  }
+
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   header .header-mobile {
     display: none;
   }
@@ -26,6 +45,14 @@
     line-height: 20px;
     color: #344563;
     margin-right: 24px;
+    padding: 8px;
+    transition: all 2s;
+  }
+
+  header .header-links a:hover {
+    background-color: #7f8cff;
+    color: #fff;
+    border-radius: 10px;
   }
 
   /* Header section style */
@@ -70,6 +97,7 @@
   .project:nth-child(4) {
     flex-direction: row-reverse;
     padding-left: 50px;
+    justify-content: space-between;
   }
 
   .project img {
@@ -124,12 +152,6 @@
     width: 50%;
   }
 
-  .about .languages hr {
-    width: 86%;
-    margin: 2px auto;
-    text-align: center;
-  }
-
   .about .languages ul {
     display: flex;
     flex-direction: row;
@@ -179,5 +201,22 @@
 
   .footer #line {
     display: none;
+  }
+
+  .scaled {
+    transition: all 2s;
+  }
+
+  .scaled:hover {
+    transform: scale(1.04);
+    overflow: hidden;
+  }
+
+  .cnt-text {
+    transition: all 1s;
+  }
+
+  .cnt-text:hover {
+    transform: translateX(10px);
   }
 }
