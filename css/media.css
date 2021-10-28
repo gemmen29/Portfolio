@@ -202,4 +202,13 @@
   .footer #line {
     display: none;
   }
+
+  .scaled {
+    transition: all 2s;
+  }
+
+  .scaled:hover {
+    transform: scale(1.04);
+    overflow: hidden;
+  }
 }
