@@ -211,4 +211,12 @@
     transform: scale(1.04);
     overflow: hidden;
   }
+
+  .cnt-text {
+    transition: all 1s;
+  }
+
+  .cnt-text:hover {
+    transform: translateX(10px);
+  }
 }
