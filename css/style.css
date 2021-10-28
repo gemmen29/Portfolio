@@ -269,8 +269,7 @@ header a {
 .about .languages hr {
   color: #dfe1e6;
   height: 1px;
-  width: 86%;
-  margin: 2px auto;
+  margin: 2px 30px;
   text-align: center;
 }
 
