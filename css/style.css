@@ -4,6 +4,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html { 
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -69,6 +73,9 @@ header a {
   color: #7f8cff;
   padding-top: 3px;
   padding-bottom: 23px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .header .social a {
@@ -171,18 +178,6 @@ header a {
   font-size: 30px;
 }
 
-.project .project-details {
-  padding: 12px;
-  text-decoration: none;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  width: 124px;
-  height: 48px;
-  color: #396df2;
-  text-align: center;
-  clear: left;
-}
-
 /* About Us section style */
 .about {
   background-color: #fff;
@@ -222,16 +217,8 @@ header a {
 
 .about .header .resume-button {
   padding: 12px;
-  text-decoration: none;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
   width: 162px;
   height: 48px;
-  color: #396df2;
-  text-align: center;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
   margin-top: 20px;
 }
 
@@ -309,10 +296,12 @@ header a {
   background-color: #6070ff;
   border-top-left-radius: 64px;
   padding-bottom: 8px;
-  background-image: url("../images/contact-form.png");
-  background-size: 265px 724px;
-  background-repeat: no-repeat;
-  background-position: 123px 21px;
+  background-image: url("../images/contact1.png"), 
+  url("../images/contact2.png"), url("../images/contact3.png"),
+  url("../images/contact4.png"), url("../images/contact5.png");
+  background-position: 35% 7%, 100% 2%, 100% 6%, 
+  65.17vw 88%, 65vw 88.5%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .footer .footer-title {
@@ -422,4 +411,34 @@ button[disabled] {
 
 .d-block {
   display: block;
+}
+
+.main-button {
+  padding: 12px;
+  text-decoration: none;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: 124px;
+  height: 48px;
+  color: #396df2;
+  text-align: center;
+}
+
+.main-button:hover {
+  background-color: #6070ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main-button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.main-button:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+  background-color: #fff;
+  cursor: not-allowed;
+  box-shadow: none;
 }
