@@ -27,16 +27,6 @@
     display: none;
   }
 
-  .header > a {
-    text-decoration: none;
-    color: #7f8cff;
-    padding-top: 3px;
-    padding-bottom: 23px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-  }
-
   header .header-links a {
     text-decoration: none;
     font-style: normal;
@@ -46,7 +36,7 @@
     color: #344563;
     margin-right: 24px;
     padding: 8px;
-    transition: all 2s;
+    transition: all 1s;
   }
 
   header .header-links a:hover {
@@ -63,7 +53,8 @@
     background-position: 20px 73px;
     padding-left: 18%;
     border-bottom-left-radius: 64px;
-    background-size: 98% 630px;
+    background-size: 98% 650px;
+    object-fit: cover;
   }
 
   .header h1 {
@@ -85,12 +76,13 @@
 
   /* My Projects section style */
   .my-projects {
-    padding: 142px 60px;
+    padding: 10vw 2vw;
   }
 
   .project {
     flex-direction: row;
-    grid-gap: 20px;
+    grid-gap: 2.5vw;
+    width: 93%;
   }
 
   .project:nth-child(2),
@@ -112,9 +104,9 @@
   }
 
   .project p {
-    font-size: 16px;
-    line-height: 24px;
-    width: 496px;
+    font-size: 1vw;
+    line-height: 2vw;
+    width: 100%;
     margin-top: 32px;
   }
 
@@ -123,10 +115,6 @@
     font-weight: 500;
     line-height: 24px;
     width: 297px;
-  }
-
-  .project .project-details {
-    margin-top: 15px;
   }
 
   /* About Us section style */
@@ -139,7 +127,7 @@
     margin: 0;
     padding: 0;
     padding-left: 70px;
-    width: 50%;
+    width: 40%;
     height: 600px;
   }
 
@@ -147,9 +135,13 @@
     margin-top: 60px;
   }
 
+  .about .header p {
+    font-size: 1.45vh;
+  }
+
   .about .languages {
     display: grid;
-    width: 50%;
+    width: 60%;
   }
 
   .about .languages ul {
