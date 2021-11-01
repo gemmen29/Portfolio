@@ -4,7 +4,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-html { 
+html {
   scroll-behavior: smooth;
 }
 
@@ -296,11 +296,18 @@ header a {
   background-color: #6070ff;
   border-top-left-radius: 64px;
   padding-bottom: 8px;
-  background-image: url("../images/contact1.png"), 
-  url("../images/contact2.png"), url("../images/contact3.png"),
-  url("../images/contact4.png"), url("../images/contact5.png");
-  background-position: 35% 7%, 100% 2%, 100% 6%, 
-  65.17vw 88%, 65vw 88.5%;
+  background-image:
+    url("../images/contact1.png"),
+    url("../images/contact2.png"),
+    url("../images/contact3.png"),
+    url("../images/contact4.png"),
+    url("../images/contact5.png");
+  background-position:
+    35% 7%,
+    100% 2%,
+    100% 6%,
+    65.17vw 88%,
+    65vw 88.5%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
