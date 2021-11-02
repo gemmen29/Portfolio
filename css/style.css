@@ -24,7 +24,7 @@ header nav {
   padding-right: 8%;
 }
 
-header h1 {
+header .logo {
   color: #6070ff;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
@@ -234,7 +234,7 @@ header a {
   height: 72px;
 }
 
-.about .languages .item div {
+.about .languages .item h3 {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 500;
@@ -342,6 +342,12 @@ header a {
 .footer .form-field {
   width: 100%;
   margin-bottom: 20px;
+  border: none;
+}
+
+.footer .form-field:focus {
+  outline: none !important;
+  border: 4px solid #000000a6;
 }
 
 .footer input[type="text"],

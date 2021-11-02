@@ -104,9 +104,6 @@
   }
 
   .project p {
-    font-size: 1vw;
-    line-height: 2vw;
-    width: 100%;
     margin-top: 32px;
   }
 
@@ -133,10 +130,6 @@
 
   .about .header .about-title {
     margin-top: 60px;
-  }
-
-  .about .header p {
-    font-size: 1.45vh;
   }
 
   .about .languages {
@@ -184,11 +177,6 @@
 
   .footer .container-form {
     padding: 0 25%;
-  }
-
-  .footer .form-field {
-    width: 100%;
-    margin-bottom: 20px;
   }
 
   .footer #line {
