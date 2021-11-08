@@ -1,22 +1,21 @@
-let menuIcon = document.getElementById("menu-icon");
-let menuList = document.getElementById("menu-list");
-let closeMenu = document.querySelectorAll("#menu-list ul li a");
+const menuIcon = document.getElementById('menu-icon');
+const menuList = document.getElementById('menu-list');
+const closeMenu = document.querySelectorAll('#menu-list ul li a');
 
-let allBlur = document.getElementsByClassName("add-blur");
+const allBlur = document.getElementsByClassName('add-blur');
 
-menuIcon.addEventListener("click", function() {
-  menuList.classList.remove("d-none");
-  for (let index = 0; index < allBlur.length; index++) {
-    allBlur[index].classList.add("blur")
+menuIcon.addEventListener('click', () => {
+  menuList.classList.remove('d-none');
+  for (let index = 0; index < allBlur.length; index += index) {
+    allBlur[index].classList.add('blur');
   }
-  console.log(allBlur);
-})
+});
 
-for (let index = 0; index < closeMenu.length; index++) {
-  closeMenu[index].addEventListener("click", function() {
-    menuList.classList.add("d-none");
-    for (let index = 0; index < allBlur.length; index++) {
-      allBlur[index].classList.remove("blur")
+for (let index = 0; index < closeMenu.length; index += index) {
+  closeMenu[index].addEventListener('click', () => {
+    menuList.classList.add('d-none');
+    for (let index = 0; index < allBlur.length; index += index) {
+      allBlur[index].classList.remove('blur');
     }
-  })
+  });
 }
