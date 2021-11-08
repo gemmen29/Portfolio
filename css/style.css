@@ -73,6 +73,41 @@ header a {
   font-weight: 300;
 }
 
+header .mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #6070ffde;
+}
+
+.mobile-menu ul li.Xxx {
+  text-align: right ;
+  font-size: 25px;
+  font-weight: 400;
+  margin-right: 38px;
+}
+.blur{
+  
+  filter: blur(4.5px);
+}
+.mobile-menu ul {
+  margin-top: 10px;
+}
+
+.mobile-menu ul li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.mobile-menu ul li a{
+  padding-top: 20px;
+  color: #fff;
+}
+
 .header > a {
   text-decoration: none;
   color: #7f8cff;
