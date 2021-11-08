@@ -98,6 +98,51 @@ header a {
   margin-right: 20px;
 }
 
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #6070ffe1;
+  z-index: 10;
+  transform: translate(0%, 0%);
+  transition: all 0.25s;
+}
+
+.one-hundred {
+  transform: translate(100%, 100%);
+}
+
+.mobile-menu ul li.close-btn {
+  text-align: right;
+  font-size: 25px;
+  font-weight: 400;
+  margin-right: 38px;
+}
+
+.blur {
+  filter: blur(6px);
+}
+
+.mobile-menu ul {
+  margin-top: 10px;
+}
+
+.mobile-menu ul li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  padding-bottom: 20px;
+}
+
+.mobile-menu .mobile-menu-links {
+  padding-top: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* My Projects section style */
 .my-projects {
   display: grid;
