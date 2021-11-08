@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const allBlur = document.getElementsByClassName('add-blur');
 
   menuIcon.addEventListener('click', () => {
-    menuList.classList.remove('d-none');
+    menuList.classList.remove('one-hundred');
     for (let index = 0; index < allBlur.length; index += 1) {
       allBlur[index].classList.add('blur');
     }
@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   for (let index = 0; index < closeMenu.length; index += 1) {
     closeMenu[index].addEventListener('click', () => {
-      menuList.classList.add('d-none');
+      menuList.classList.add('one-hundred');
       for (let i = 0; i < allBlur.length; i += 1) {
         allBlur[i].classList.remove('blur');
       }

@@ -100,12 +100,18 @@ header a {
 
 .mobile-menu {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   background-color: #6070ffe1;
   z-index: 10;
+  transform: translate(0%, 0%);
+  transition: all 0.25s;
+}
+
+.one-hundred {
+  transform: translate(100%, 100%);
 }
 
 .mobile-menu ul li.close-btn {
