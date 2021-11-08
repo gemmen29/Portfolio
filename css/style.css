@@ -73,13 +73,14 @@ header a {
   font-weight: 300;
 }
 
-header .mobile-menu {
+.mobile-menu {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #6070ffde;
+  background-color: #6070ffe1;
+  z-index: 10;
 }
 
 .mobile-menu ul li.Xxx {
@@ -89,9 +90,9 @@ header .mobile-menu {
   margin-right: 38px;
 }
 
-/* body.blur > :{
-  filter: blur(4.5px);
-} */
+.blur {
+  filter: blur(6px);
+}
 
 .mobile-menu ul {
   margin-top: 10px;
@@ -102,11 +103,13 @@ header .mobile-menu {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  padding-bottom: 20px;
 }
 
 .mobile-menu ul li a{
   padding-top: 20px;
   color: #fff;
+  text-decoration: none;
 }
 
 .header > a {
