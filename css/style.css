@@ -88,10 +88,11 @@ header .mobile-menu {
   font-weight: 400;
   margin-right: 38px;
 }
-.blur{
-  
+
+/* body.blur > :{
   filter: blur(4.5px);
-}
+} */
+
 .mobile-menu ul {
   margin-top: 10px;
 }
