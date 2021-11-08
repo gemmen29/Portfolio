@@ -22,6 +22,7 @@ header nav {
   align-items: center;
   padding-left: 8%;
   padding-right: 8%;
+  height: 72px;
 }
 
 header .logo {
@@ -50,6 +51,10 @@ header a {
   flex-direction: column;
   background-color: #fff;
   padding: 10%;
+}
+
+.header a {
+  text-decoration: none;
 }
 
 .header h1 {
@@ -107,6 +112,7 @@ header a {
   display: flex;
   flex-direction: column;
   padding: 16px;
+  margin: 0 auto;
 }
 
 .project .project-body {
