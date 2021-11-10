@@ -134,7 +134,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const userMail = form.elements['user_email'].value;
+    const userMail = form.elements.user_email.value;
     const errorMessage = document.getElementById('error-msg');
     if (userMail === userMail.toLowerCase()) {
       errorMessage.classList.add('d-none');
