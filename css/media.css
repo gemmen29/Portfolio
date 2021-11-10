@@ -45,6 +45,50 @@
     border-radius: 10px;
   }
 
+  /* Popup style */
+  .see-por {
+    padding-top: 3vh;
+  }
+
+  .see-por .project-modal-content {
+    height: 91vh;
+    margin-top: 0;
+    width: 70%;
+  }
+
+  .disk-ver {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5px;
+  }
+
+  .technology-list {
+    padding: 3.5px 8px;
+    margin-top: 8px;
+  }
+
+  .technology-list:nth-child(n+4) {
+    display: block;
+  }
+
+  .ather-div {
+    text-align: left;
+    width: 45%;
+  }
+
+  .project-modal-content .img100 {
+    height: 42vh;
+  }
+
+  .disk-ver p {
+    width: 70%;
+    overflow-y: auto;
+    height: 25vh;
+    text-align: justify;
+    margin-top: 0;
+  }
+
   /* Header section style */
   .header {
     background-image: url("../images/Header-shapes.png");

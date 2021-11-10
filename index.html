@@ -2,303 +2,346 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6ZMZYL3WX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { window.dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>George Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6ZMZYL3WX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-X6ZMZYL3WX');
-    </script>
+    gtag('config', 'G-X6ZMZYL3WX');
+  </script>
 
 </head>
 
 <body>
-    <div id="menu-list" class="mobile-menu one-hundred">
-        <ul>
-            <li class="close-btn">
-              <a class="mobile-menu-links">x</a>
-            </li>
-            <li>
-                <a class="mobile-menu-links" href="#protofilo">Portfolio</a>
-            </li>
-            <li>
-                <a class="mobile-menu-links" href="#about">About</a>
-            </li>
-            <li>
-                <a class="mobile-menu-links" href="#contact">Contact</a>
-            </li>
-        </ul>
+  <div id="menu-list" class="mobile-menu one-hundred">
+    <ul>
+      <li class="close-btn">
+        <a class="mobile-menu-links">x</a>
+      </li>
+      <li>
+        <a class="mobile-menu-links" href="#protofilo">Portfolio</a>
+      </li>
+      <li>
+        <a class="mobile-menu-links" href="#about">About</a>
+      </li>
+      <li>
+        <a class="mobile-menu-links" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div id="project-modal" class="see-por d-none">
+    <div class="project-modal-content">
+      <div class="see-pro-head">
+        <h3 id="project-header">Tonic</h3>
+        <a id="close-project-modal">x</a>
+      </div>
+      <div class="project-sub-header">
+        <span>CANOPY</span>
+        <span class="sub-different-color bullet">•</span>
+        <span class="sub-different-color">Back End Dev</span>
+        <span class="sub-different-color bullet">•</span>
+        <span class="sub-different-color">2015</span>
+      </div>
+      <img class="img100 project-image" src="images/project1.png" alt="" />
+      <div class="disk-ver">
+        <p class="dis--">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde voluptatum soluta ullam eveniet
+          laudantium molestiae. Ullam voluptas recusandae commodi facere aperiam, cum ipsum. Veritatis harum dignissimos
+          voluptate, hic recusandae distinctio tenetur obcaecati molestias minima voluptatem, optio possimus non ex
+          repudiandae! Accusantium fugiat dignissimos quae atque, tempore officia quos iste tempora doloremque. Corrupti
+          ad cumque ab quas obcaecati! A, voluptatum. Possimus autem accusantium minus laboriosam nulla sit cumque quod
+          alias at esse fugiat in tempore hic quibusdam sed rem officiis quae blanditiis assumenda doloribus, pariatur
+          vero. Voluptas, quis mollitia dolorem nobis facilis eum, doloribus architecto dicta minus expedita placeat
+          esse.
+        </p>
+        <div class="ather-div">
+          <ul id="technologies">
+          </ul>
+          <hr class="modal-line">
+          <div class="see-pro-btns">
+            <button class="button-style" type="button">
+              See Live
+              &nbsp;
+              <img src="images/see-live.svg" alt="See live icon" />
+            </button>
+            <button class="button-style" type="button">
+              See Source
+              &nbsp;
+              <img src="images/see-source.svg" alt="See Source icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="add-blur">
+    <nav>
+      <a class="rotate-logo logo" href="#">
+        George
+      </a>
+      <a id="menu-icon" class="header-mobile" href="#">
+        <img src="images/Union.png" alt="Union Image for menu">
+      </a>
+      <div class="header-links d-none">
+        <a href="#protofilo">
+          Protofilo
+        </a>
+        <a href="#about">
+          About
+        </a>
+        <a href="#contact">
+          Contact
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="add-blur">
+    <section class="header">
+      <h1>I’m George <br> Glad to see you!</h1>
+      <p>
+        I’m a software developer! I can help you build a product , feature or website Look through some of my
+        work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+        contact me.
+      </p>
+      <a class="lets-connect" href="#">LET’S CONNECT</a>
+      <ul class="social">
+        <li>
+          <a href="#">
+            <img src="images/Twitter.svg" alt="Twitter icon">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/Linkedin.svg" alt="Linkedin icon">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/Medium.svg" alt="Medium icon">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/Github.svg" alt="Github icon">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/Angelist.svg" alt="Angelist icon">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div id="protofilo" class="my-projects">
+      <div class="project">
+        <img class="scaled" src="images/project1.png" alt="Tonic project screenshot">
+        <div class="project-body">
+          <h2 class="project-title">Tonic</h2>
+          <div class="project-sub-header">
+            <span>CANOPY</span>
+            <span class="sub-different-color bullet">•</span>
+            <span class="sub-different-color">Back End Dev</span>
+            <span class="sub-different-color bullet">•</span>
+            <span class="sub-different-color">2015</span>
+          </div>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+          <a data-projectId='1' class="see-pro-btn main-button">See Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="scaled" src="images/project2.png" alt="Multi-Post Stories project screenshot">
+        <div class="project-body">
+          <h2 class="project-title">Multi-Post Stories</h2>
+          <div class="project-sub-header">
+            <span>CANOPY</span>
+            <span class="sub-different-color bullet">•</span>
+            <span class="sub-different-color">Back End Dev</span>
+            <span class="sub-different-color bullet">•</span>
+            <span class="sub-different-color">2015</span>
+          </div>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+          <a data-projectId='2' class="see-pro-btn main-button">See Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="scaled" src="images/project3.png" alt="Tonic project screenshot">
+        <div class="project-body">
+          <h2 class="project-title">Tonic</h2>
+          <div class="project-sub-header">
+            <span>CANOPY</span>
+            <span class="sub-different-color bullet">•</span>
+            <span class="sub-different-color">Back End Dev</span>
+            <span class="sub-different-color bullet">•</span>
+            <span class="sub-different-color">2015</span>
+          </div>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+          <a data-projectId='3' class="see-pro-btn main-button">See Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img class="scaled" src="images/project4.png" alt="Multi-Post Stories project screenshot">
+        <div class="project-body">
+          <h2 class="project-title">Multi-Post Stories</h2>
+          <div class="project-sub-header">
+            <span>CANOPY</span>
+            <span class="sub-different-color bullet">•</span>
+            <span class="sub-different-color">Back End Dev</span>
+            <span class="sub-different-color bullet">•</span>
+            <span class="sub-different-color">2015</span>
+          </div>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+          <a data-projectId='4' class="see-pro-btn main-button">See Project</a>
+        </div>
+      </div>
     </div>
 
-    <header class="add-blur">
-        <nav>
-            <a class="rotate-logo logo" href="#">
-                George
+    <section id="about" class="about">
+      <div class="header">
+        <h2 class="about-title">About Myself</h2>
+        <p>
+          Hello I’m a software developer! I can help you build a product , feature or website Look through
+          some of my work and experience! If you like what you see and have a project you need coded, don’t
+          hestiate to contact me.
+        </p>
+        <a class="lets-connect" href="#">LET’S CONNECT</a>
+        <ul class="social">
+          <li>
+            <a href="#">
+              <img src="images/Github.svg" alt="Github icon">
             </a>
-            <a id="menu-icon" class="header-mobile" href="#">
-                <img src="images/Union.png" alt="Union Image for menu">
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/Linkedin.svg" alt="Linkedin icon">
             </a>
-            <div class="header-links d-none">
-                <a href="#protofilo">
-                    Protofilo
-                </a>
-                <a href="#about">
-                    About
-                </a>
-                <a href="#contact">
-                    Contact
-                </a>
-            </div>
-        </nav>
-    </header>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/Angelist.svg" alt="Angelist icon">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/Twitter.svg" alt="Twitter icon">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/Medium.svg" alt="Medium icon">
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="resume-button main-button">Get my resume</a>
+      </div>
 
-    <main class="add-blur">
-        <section class="header">
-            <h1>I’m George <br> Glad to see you!</h1>
-            <p>
-                I’m a software developer! I can help you build a product , feature or website Look through some of my
-                work and experience! If you like what you see and have a project you need coded, don’t hestiate to
-                contact me.
-            </p>
-            <a class="lets-connect" href="#">LET’S CONNECT</a>
-            <ul class="social">
-                <li>
-                    <a href="#">
-                        <img src="images/Twitter.svg" alt="Twitter icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/Linkedin.svg" alt="Linkedin icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/Medium.svg" alt="Medium icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/Github.svg" alt="Github icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/Angelist.svg" alt="Angelist icon">
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <div id="protofilo" class="my-projects">
-            <div class="project">
-                <img class="scaled" src="images/project1.png" alt="Tonic project screenshot">
-                <div class="project-body">
-                    <h2 class="project-title">Tonic</h2>
-                    <div class="project-sub-header">
-                        <span>CANOPY</span>
-                        <span class="sub-different-color bullet">•</span>
-                        <span class="sub-different-color">Back End Dev</span>
-                        <span class="sub-different-color bullet">•</span>
-                        <span class="sub-different-color">2015</span>
-                    </div>
-                    <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                    </ul>
-                    <a href="#" class="main-button">See Project</a>
-                </div>
-            </div>
-            <div class="project">
-                <img class="scaled" src="images/project2.png" alt="Multi-Post Stories project screenshot">
-                <div class="project-body">
-                    <h2 class="project-title">Multi-Post Stories</h2>
-                    <div class="project-sub-header">
-                        <span>CANOPY</span>
-                        <span class="sub-different-color bullet">•</span>
-                        <span class="sub-different-color">Back End Dev</span>
-                        <span class="sub-different-color bullet">•</span>
-                        <span class="sub-different-color">2015</span>
-                    </div>
-                    <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                    </ul>
-                    <a href="#" class="main-button">See Project</a>
-                </div>
-            </div>
-            <div class="project">
-                <img class="scaled" src="images/project3.png" alt="Tonic project screenshot">
-                <div class="project-body">
-                    <h2 class="project-title">Tonic</h2>
-                    <div class="project-sub-header">
-                        <span>CANOPY</span>
-                        <span class="sub-different-color bullet">•</span>
-                        <span class="sub-different-color">Back End Dev</span>
-                        <span class="sub-different-color bullet">•</span>
-                        <span class="sub-different-color">2015</span>
-                    </div>
-                    <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                    </ul>
-                    <a href="#" class="main-button">See Project</a>
-                </div>
-            </div>
-            <div class="project">
-                <img class="scaled" src="images/project4.png" alt="Multi-Post Stories project screenshot">
-                <div class="project-body">
-                    <h2 class="project-title">Multi-Post Stories</h2>
-                    <div class="project-sub-header">
-                        <span>CANOPY</span>
-                        <span class="sub-different-color bullet">•</span>
-                        <span class="sub-different-color">Back End Dev</span>
-                        <span class="sub-different-color bullet">•</span>
-                        <span class="sub-different-color">2015</span>
-                    </div>
-                    <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                    </ul>
-                    <a href="#" class="main-button">See Project</a>
-                </div>
-            </div>
+      <div class="languages">
+        <div class="item">
+          <h3>Languages</h3>
+          <img class="down-arrow" src="images/Down-arrow.svg" alt="Down-arrow icon">
         </div>
-
-        <section id="about" class="about">
-            <div class="header">
-                <h2 class="about-title">About Myself</h2>
-                <p>
-                    Hello I’m a software developer! I can help you build a product , feature or website Look through
-                    some of my work and experience! If you like what you see and have a project you need coded, don’t
-                    hestiate to contact me.
-                </p>
-                <a class="lets-connect" href="#">LET’S CONNECT</a>
-                <ul class="social">
-                    <li>
-                        <a href="#">
-                            <img src="images/Github.svg" alt="Github icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Linkedin.svg" alt="Linkedin icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Angelist.svg" alt="Angelist icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Twitter.svg" alt="Twitter icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Medium.svg" alt="Medium icon">
-                        </a>
-                    </li>
-                </ul>
-                <a href="#" class="resume-button main-button">Get my resume</a>
+        <ul>
+          <li class="content">
+            <div>
+              <img src="images/JS.png" alt="Javascript icon">
+              <h4>Javascript</h4>
             </div>
-
-            <div class="languages">
-                <div class="item">
-                    <h3>Languages</h3>
-                    <img class="down-arrow" src="images/Down-arrow.svg" alt="Down-arrow icon">
-                </div>
-                <ul>
-                    <li class="content">
-                        <div>
-                            <img src="images/JS.png" alt="Javascript icon">
-                            <h4>Javascript</h4>
-                        </div>
-                    </li>
-                    <li class="content">
-                        <div>
-                            <img src="images/HTML5.png" alt="HTML5 icon">
-                            <h4>HTML</h4>
-                        </div>
-                    </li>
-                    <li class="content">
-                        <div>
-                            <img src="images/CSS3.png" alt="CSS3 icon">
-                            <h4>CSS</h4>
-                        </div>
-                    </li>
-                </ul>
-                <div class="item">
-                    <h3>Frameworks</h3>
-                    <img class="right-arrow" src="images/Right-arrow.svg" alt="Right-arrow icon">
-                </div>
-                <hr>
-                <div class="item">
-                    <h3>Skills</h3>
-                    <img class="right-arrow" src="images/Right-arrow.svg" alt="Right-arrow icon">
-                </div>
-                <hr>
+          </li>
+          <li class="content">
+            <div>
+              <img src="images/HTML5.png" alt="HTML5 icon">
+              <h4>HTML</h4>
             </div>
-        </section>
-    </main>
-
-    <footer id="contact" class="footer add-blur">
-        <div class="footer-content">
-            <h2 class="footer-title">Contact me</h2>
-            <div class="container-form">
-                <p class="cnt-text">If you have an application you are interested in developing, a feature that you
-                    need built
-                    or a project that needs coding. I’d love to help with it
-                </p>
-                <form class="cnt-form-controls" action="https://formspree.io/f/xzbyqoqd" method="post">
-                    <label for="name">
-                        <input class="form-field" type="text" id="name" name="user_name" placeholder="Enter your name"
-                            required maxlength="30">
-                    </label>
-                    <label for="email">
-                        <input class="form-field" type="email" id="email" name="user_email"
-                            placeholder="Enter your email" required>
-                    </label>
-                    <label for="msg">
-                        <textarea class="form-field" name="message" id="msg" cols="30" rows="10" maxlength="500"
-                            required placeholder="Write your message here"></textarea>
-                    </label>
-                    <button type="submit" class="btn">Get in Touch</button>
-                </form>
+          </li>
+          <li class="content">
+            <div>
+              <img src="images/CSS3.png" alt="CSS3 icon">
+              <h4>CSS</h4>
             </div>
-            <div id="line"></div>
+          </li>
+        </ul>
+        <div class="item">
+          <h3>Frameworks</h3>
+          <img class="right-arrow" src="images/Right-arrow.svg" alt="Right-arrow icon">
         </div>
-    </footer>
-    <script src="index.js"></script>
+        <hr>
+        <div class="item">
+          <h3>Skills</h3>
+          <img class="right-arrow" src="images/Right-arrow.svg" alt="Right-arrow icon">
+        </div>
+        <hr>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer add-blur">
+    <div class="footer-content">
+      <h2 class="footer-title">Contact me</h2>
+      <div class="container-form">
+        <p class="cnt-text">If you have an application you are interested in developing, a feature that you
+          need built
+          or a project that needs coding. I’d love to help with it
+        </p>
+        <form class="cnt-form-controls" action="https://formspree.io/f/xzbyqoqd" method="post">
+          <label for="name">
+            <input class="form-field" type="text" id="name" name="user_name" placeholder="Enter your name" required
+              maxlength="30">
+          </label>
+          <label for="email">
+            <input class="form-field" type="email" id="email" name="user_email" placeholder="Enter your email" required>
+          </label>
+          <label for="msg">
+            <textarea class="form-field" name="message" id="msg" cols="30" rows="10" maxlength="500" required
+              placeholder="Write your message here"></textarea>
+          </label>
+          <button type="submit" class="btn">Get in Touch</button>
+        </form>
+      </div>
+      <div id="line"></div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
