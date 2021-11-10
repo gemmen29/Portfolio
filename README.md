@@ -15,6 +15,7 @@ Additional description about the project and its features.
 - HTML
 - CSS
 - Linters
+- Javascript
 
 ## Live Demo
 

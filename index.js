@@ -129,4 +129,18 @@ window.addEventListener('DOMContentLoaded', () => {
       allBlur[index].classList.remove('blur-see-project-modal');
     }
   });
+
+  // validation
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const userMail = form.elements['user_email'].value;
+    const errorMessage = document.getElementById('error-msg');
+    if (userMail === userMail.toLowerCase()) {
+      errorMessage.classList.add('d-none');
+      form.submit();
+    } else {
+      errorMessage.classList.remove('d-none');
+    }
+  });
 });
