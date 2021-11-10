@@ -1,4 +1,5 @@
 /* Main style */
+
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -519,6 +520,14 @@ input[type="email"] {
   font-size: 15px;
   line-height: 24px;
   padding: 1em;
+}
+
+.footer p.error {
+  background-color: #3e49a7;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
 }
 
 .footer #line {
