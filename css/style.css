@@ -14,6 +14,95 @@ body {
   background-color: #f7f7f9;
 }
 
+.see-por {
+  position: fixed;
+  padding-top: 6vh;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: #c1c7d0cb;
+}
+
+.see-por .project-modal-content {
+  border-radius: 16px;
+  background: #fff;
+  width: 90%;
+  height: 88vh;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.see-pro-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.see-por h3 {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.see-por a {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.see-por .in-body {
+  width: 250px;
+}
+
+.see-por .img100 {
+  border-radius: 8px;
+  height: 250px;
+  width: 100%;
+}
+
+.disk-ver p {
+  overflow-y: scroll;
+  height: 18vh;
+  text-align: justify;
+  padding: 4px 8px;
+}
+
+.ather-div {
+  margin-top: 15px;
+}
+
+#technologies li.ppp:nth-child(n+4) {
+  display: none;
+}
+
+.see-por .see-pro-btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center;
+  padding: 2px;
+}
+
+hr {
+  border-top: 1px solid #ebecf0;
+}
+
+.see-por .see-pro-btns button {
+  padding: 0 7px;
+  width: auto;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blur-see-project-modal {
+  filter: blur(2px);
+}
+
 /* Nav style */
 header nav {
   display: flex;
