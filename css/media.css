@@ -53,6 +53,7 @@
   .see-por .project-modal-content {
     height: 91vh;
     margin-top: 0;
+    width: 70%;
   }
 
   .disk-ver {
@@ -74,10 +75,6 @@
   .ather-div {
     text-align: left;
     width: 45%;
-  }
-
-  .see-por .project-modal-content {
-    width: 70%;
   }
 
   .project-modal-content .img100 {

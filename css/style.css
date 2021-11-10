@@ -97,7 +97,7 @@ body {
   padding: 2px;
 }
 
-#project-modal hr {
+#project-modal .modal-line {
   border-top: 1px solid #ebecf0;
 }
 
