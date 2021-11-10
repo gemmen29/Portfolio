@@ -14,6 +14,7 @@ body {
   background-color: #f7f7f9;
 }
 
+/* Popup style */
 .see-por {
   position: fixed;
   padding-top: 6vh;
@@ -41,6 +42,7 @@ body {
 }
 
 .see-por h3 {
+  margin: 0;
   padding-top: 20px;
   font-weight: bold;
   font-size: 32px;
@@ -48,24 +50,33 @@ body {
   color: #172b4d;
 }
 
-.see-por a {
-  font-size: 25px;
-  font-weight: 200;
+.see-por .project-sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+  font-weight: 600;
+  color: #344563;
+  padding: 0 2px;
 }
 
-.see-por .in-body {
-  width: 250px;
+.see-por .sub-different-color {
+  color: #7a869a;
+}
+
+.see-por .bullet {
+  font-size: 30px;
 }
 
 .see-por .img100 {
   border-radius: 8px;
-  height: 250px;
+  height: 30vh;
   width: 100%;
 }
 
 .disk-ver p {
-  overflow-y: scroll;
-  height: 18vh;
+  overflow-y: auto;
+  height: 16vh;
   text-align: justify;
   padding: 4px 8px;
 }
@@ -86,7 +97,7 @@ body {
   padding: 2px;
 }
 
-hr {
+#project-modal hr {
   border-top: 1px solid #ebecf0;
 }
 
@@ -187,6 +198,7 @@ header a {
   margin-right: 20px;
 }
 
+/* Mobile menu */
 .mobile-menu {
   position: fixed;
   width: 100vw;
@@ -594,4 +606,57 @@ button[disabled] {
   background-color: #fff;
   cursor: not-allowed;
   box-shadow: none;
+}
+
+.button-style {
+  width: 130px;
+  height: 45px;
+  color: #396df2;
+  background-color: white;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 16px;
+  margin-right: 7px;
+}
+
+.button-style:hover {
+  color: white;
+  background-color: #6070ff;
+  border: 1px solid #6070ff;
+}
+
+.button-style:focus {
+  color: white;
+  background-color: #2230d2;
+  border: 1px solid #2230d2;
+}
+
+.technology-list {
+  background-color: #ebebff;
+  border-radius: 8px;
+  margin-right: 20px;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.technology-list:nth-child(n+4) {
+  display: none;
+}
+
+#technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  list-style: none;
 }
