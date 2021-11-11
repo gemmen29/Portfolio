@@ -143,4 +143,24 @@ window.addEventListener('DOMContentLoaded', () => {
       errorMessage.classList.remove('d-none');
     }
   });
+  // localStorage
+  // set data into storage
+  const inputData = document.getElementsByClassName('form-field');
+  for (let i = 0; i < inputData.length; i += 1) {
+    inputData[i].addEventListener('keydown', () => {
+      const userData = {
+        name: form.elements.userName.value,
+        mail: form.elements.userEmail.value,
+        message: form.elements.userMessage.value,
+      };
+      localStorage.setItem('user-data', JSON.stringify(userData));
+    });
+  }
+  // Retrieve data from local storage
+  if (localStorage.getItem('user-data') !== null) {
+    const userdata = JSON.parse(localStorage.getItem('user-data'));
+    form.elements.userName.value = userdata.name;
+    form.elements.userEmail.value = userdata.mail;
+    form.elements.userMessage.value = userdata.message;
+  }
 });
