@@ -143,4 +143,17 @@ window.addEventListener('DOMContentLoaded', () => {
       errorMessage.classList.remove('d-none');
     }
   });
+  // localStorage
+  // set data into storage
+  const inputData = document.getElementsByClassName('form-field');
+  for (let i = 0; i < inputData.length; i++) {
+    inputData[i].addEventListener('keydown', () => {
+      const userData = {
+        name: form.elements.userName.value,
+        mail: form.elements.userEmail.value,
+        message: form.elements.userMessage.value,
+      };
+      localStorage.setItem('user-data', JSON.stringify(userData));
+    });
+  }
 });
