@@ -156,4 +156,10 @@ window.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('user-data', JSON.stringify(userData));
     });
   }
+  if(localStorage.getItem('user-data') != NULL) {
+    const userdata = JSON.parse(localStorage.getItem('user-data'));
+    form.elements.userName.value = userdata.name;
+    form.elements.userEmail.value = userdata.mail;
+    form.elements.userMessage.value = userdata.message;
+  };
 });
