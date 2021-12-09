@@ -29,68 +29,48 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const projects = [
     {
-      name: 'Tonic',
+      name: 'Module1 Capstone',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde voluptatum soluta ullam eveniet laudantium molestiae. Ullam voluptas recusandae commodi facere aperiam, cum ipsum. Veritatis harum dignissimos voluptate, hic recusandae distinctio tenetur obcaecati molestias minima voluptatem, optio possimus non ex repudiandae! Accusantium fugiat dignissimos quae atque, tempore officia quos iste tempora doloremque. Corrupti ad cumque ab quas obcaecati! A, voluptatum. Possimus autem accusantium minus laboriosam nulla sit cumque quod alias at esse fugiat in tempore hic quibusdam sed rem officiis quae blanditiis assumenda doloribus, pariatur vero. Voluptas, quis mollitia dolorem nobis facilis eum, doloribus architecto dicta minus expedita placeat esse.      ',
-      featuredImage: 'images/project1.png',
+        'This is the first module capstone project in microverse',
+      featuredImage: 'images/capstone.png',
       technologies: [
         'html',
         'css',
         'javascript',
-        'github',
-        'ruby',
         'bootstrap',
       ],
-      liveVersion: '#',
-      source: '#',
+      liveVersion: 'https://gemmen29.github.io/Module1-Capstone/',
+      source: 'https://github.com/gemmen29/Module1-Capstone',
     },
     {
-      name: 'Multi-Post Stories',
+      name: 'Awesome Books',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde voluptatum soluta ullam eveniet laudantium molestiae. Ullam voluptas recusandae commodi facere aperiam, cum ipsum. Veritatis harum dignissimos voluptate, hic recusandae distinctio tenetur obcaecati molestias minima voluptatem, optio possimus non ex repudiandae! Accusantium fugiat dignissimos quae atque, tempore officia quos iste tempora doloremque. Corrupti ad cumque ab quas obcaecati! A, voluptatum. Possimus autem accusantium minus laboriosam nulla sit cumque quod alias at esse fugiat in tempore hic quibusdam sed rem officiis quae blanditiis assumenda doloribus, pariatur vero. Voluptas, quis mollitia dolorem nobis facilis eum, doloribus architecto dicta minus expedita placeat esse.      ',
-      featuredImage: 'images/project2.png',
+        'Basic website for add and remove books',
+      featuredImage: 'images/awesome.png',
       technologies: [
         'html',
         'css',
         'javascript',
-        'github',
-        'ruby',
         'bootstrap',
+
       ],
-      liveVersion: '#',
-      source: '#',
+      liveVersion: 'https://gemmen29.github.io/Awesome-Book/',
+      source: 'https://github.com/gemmen29/Awesome-Book',
     },
     {
-      name: 'Tonic',
+      name: 'ToDo List',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde voluptatum soluta ullam eveniet laudantium molestiae. Ullam voluptas recusandae commodi facere aperiam, cum ipsum. Veritatis harum dignissimos voluptate, hic recusandae distinctio tenetur obcaecati molestias minima voluptatem, optio possimus non ex repudiandae! Accusantium fugiat dignissimos quae atque, tempore officia quos iste tempora doloremque. Corrupti ad cumque ab quas obcaecati! A, voluptatum. Possimus autem accusantium minus laboriosam nulla sit cumque quod alias at esse fugiat in tempore hic quibusdam sed rem officiis quae blanditiis assumenda doloribus, pariatur vero. Voluptas, quis mollitia dolorem nobis facilis eum, doloribus architecto dicta minus expedita placeat esse.      ',
-      featuredImage: 'images/project3.png',
+        'This is a website for managing the daily tasks',
+      featuredImage: 'images/todo.png',
       technologies: [
         'html',
         'css',
         'javascript',
-        'github',
-        'ruby',
-        'bootstrap',
+        'webpacks',
+        'jest',
       ],
-      liveVersion: '#',
-      source: '#',
-    },
-    {
-      name: 'Multi-Post Stories',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde voluptatum soluta ullam eveniet laudantium molestiae. Ullam voluptas recusandae commodi facere aperiam, cum ipsum. Veritatis harum dignissimos voluptate, hic recusandae distinctio tenetur obcaecati molestias minima voluptatem, optio possimus non ex repudiandae! Accusantium fugiat dignissimos quae atque, tempore officia quos iste tempora doloremque. Corrupti ad cumque ab quas obcaecati! A, voluptatum. Possimus autem accusantium minus laboriosam nulla sit cumque quod alias at esse fugiat in tempore hic quibusdam sed rem officiis quae blanditiis assumenda doloribus, pariatur vero. Voluptas, quis mollitia dolorem nobis facilis eum, doloribus architecto dicta minus expedita placeat esse.      ',
-      featuredImage: 'images/project4.png',
-      technologies: [
-        'html',
-        'css',
-        'javascript',
-        'github',
-        'ruby',
-        'bootstrap',
-      ],
-      liveVersion: '#',
-      source: '#',
+      liveVersion: 'https://gemmen29.github.io/ToDo-List/dist/',
+      source: 'https://github.com/gemmen29/ToDo-List',
     },
   ];
 
