@@ -22,6 +22,7 @@
     gtag('config', 'G-X6ZMZYL3WX');
   </script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 
 <body>
@@ -41,7 +42,7 @@
       </li>
     </ul>
   </div>
-  <div id="project-modal" class="see-por d-none">
+  <div id="project-modal" class="see-por d-none blur-see-project-modal">
     <div class="project-modal-content">
       <div class="see-pro-head">
         <h3 id="project-header">Tonic</h3>
@@ -67,20 +68,20 @@
           esse.
         </p>
         <div class="ather-div">
-          <ul id="technologies">
+          <ul id="technologies" class="technologies">
           </ul>
           <hr class="modal-line">
           <div class="see-pro-btns">
-            <button class="button-style" type="button">
+            <a id="see-live" target="_blank" class="button-style">
               See Live
               &nbsp;
-              <img src="images/see-live.svg" alt="See live icon" />
-            </button>
-            <button class="button-style" type="button">
+              <i class="fa-solid fa-arrows-rotate fa-lg"></i>
+            </a>
+            <a id="see-source" target="_blank" class="button-style">
               See Source
               &nbsp;
-              <img src="images/see-source.svg" alt="See Source icon" />
-            </button>
+              <i class="fa-solid fa-eye fa-lg"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -255,6 +256,7 @@
     </div>
   </footer>
   <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
 </body>
 
 </html>

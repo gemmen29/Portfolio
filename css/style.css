@@ -112,7 +112,7 @@ body {
 }
 
 .blur-see-project-modal {
-  filter: blur(2px);
+  backdrop-filter: blur(5px);
 }
 
 /* Nav style */
@@ -249,7 +249,8 @@ header a {
 .my-projects {
   display: grid;
   grid-row-gap: 88px;
-  padding: 88px 24px;
+  padding-top: 88px;
+  padding-bottom: 88px;
 }
 
 .project {
@@ -612,8 +613,9 @@ button[disabled] {
 }
 
 .button-style {
-  width: 130px;
-  height: 45px;
+  text-decoration: none;
+  display: flex;
+  padding: 10px;
   color: #396df2;
   background-color: white;
   border: 1px solid #396df2;
@@ -621,8 +623,7 @@ button[disabled] {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  margin-bottom: 16px;
-  margin-right: 7px;
+  align-items: center;
 }
 
 .button-style:hover {
@@ -653,7 +654,7 @@ button[disabled] {
   display: none;
 }
 
-#technologies {
+.technologies {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -662,4 +663,15 @@ button[disabled] {
   padding-left: 10px;
   margin-bottom: 10px;
   list-style: none;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.technologies li {
+  margin-right: 20px;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #6070ff;
 }
