@@ -22,11 +22,41 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* Modal popup */
-  const seeProjects = document.getElementsByClassName('see-pro-btn');
-  const projectModal = document.getElementById('project-modal');
-  const closeProjectModal = document.getElementById('close-project-modal');
+  // validation
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const userMail = form.elements.user_email.value;
+    const errorMessage = document.getElementById('error-msg');
+    if (userMail === userMail.toLowerCase()) {
+      errorMessage.classList.add('d-none');
+      form.submit();
+    } else {
+      errorMessage.classList.remove('d-none');
+    }
+  });
+  // localStorage
+  // set data into storage
+  const inputData = document.getElementsByClassName('form-field');
+  for (let i = 0; i < inputData.length; i += 1) {
+    inputData[i].addEventListener('keydown', () => {
+      const userData = {
+        name: form.elements.userName.value,
+        mail: form.elements.userEmail.value,
+        message: form.elements.userMessage.value,
+      };
+      localStorage.setItem('user-data', JSON.stringify(userData));
+    });
+  }
+  // Retrieve data from local storage
+  if (localStorage.getItem('user-data') !== null) {
+    const userdata = JSON.parse(localStorage.getItem('user-data'));
+    form.elements.userName.value = userdata.name;
+    form.elements.userEmail.value = userdata.mail;
+    form.elements.userMessage.value = userdata.message;
+  }
 
+  // Create projects dynamically
   const projects = [
     {
       name: 'Show app',
@@ -64,6 +94,42 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   ];
 
+  const createProject = (project, index) => {
+    console.log(project.technologies);
+    return `<div class="project">
+    <img class="scaled" src="${
+      project.featuredImage
+    }" alt="Module1 Capstone screenshot">
+    <div class="project-body">
+      <h2 class="project-title">${project.name}</h2>
+      <div class="project-sub-header">
+        <span>CANOPY</span>
+        <span class="sub-different-color bullet">•</span>
+        <span class="sub-different-color">Back End Dev</span>
+        <span class="sub-different-color bullet">•</span>
+        <span class="sub-different-color">2015</span>
+      </div>
+      <p>
+        ${project.description}
+      </p>
+      <ul>
+      ${project.technologies.map((tech) => `<li>${tech}</li>`).join(' ')}
+      </ul>
+      <a data-projectId='${index}' class="see-pro-btn main-button">See Project</a>
+    </div>
+  </div>`;
+  };
+
+  const portofilo = document.querySelector('#protofilo');
+  projects.forEach((project, index) => {
+    portofilo.innerHTML += createProject(project, index);
+  });
+
+  /* Modal popup */
+  const seeProjects = document.getElementsByClassName('see-pro-btn');
+  const projectModal = document.getElementById('project-modal');
+  const closeProjectModal = document.getElementById('close-project-modal');
+
   for (let index = 0; index < seeProjects.length; index += 1) {
     seeProjects[index].addEventListener('click', (e) => {
       const projectTitle = projectModal.querySelector('h3#project-header');
@@ -73,12 +139,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
       const projectId = e.target.getAttribute('data-projectId');
 
-      projectTitle.textContent = projects[projectId - 1].name;
-      projectDescription.textContent = projects[projectId - 1].description;
-      projectImage.src = projects[projectId - 1].featuredImage;
+      projectTitle.textContent = projects[projectId].name;
+      projectDescription.textContent = projects[projectId].description;
+      projectImage.src = projects[projectId].featuredImage;
 
       technologiesUL.innerHTML = '';
-      projects[projectId - 1].technologies.forEach((project) => {
+      projects[projectId].technologies.forEach((project) => {
         const li = document.createElement('li');
         li.classList.add('technology-list');
         const liText = document.createTextNode(project);
@@ -99,38 +165,4 @@ window.addEventListener('DOMContentLoaded', () => {
       allBlur[index].classList.remove('blur-see-project-modal');
     }
   });
-
-  // validation
-  const form = document.getElementById('contactForm');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const userMail = form.elements.user_email.value;
-    const errorMessage = document.getElementById('error-msg');
-    if (userMail === userMail.toLowerCase()) {
-      errorMessage.classList.add('d-none');
-      form.submit();
-    } else {
-      errorMessage.classList.remove('d-none');
-    }
-  });
-  // localStorage
-  // set data into storage
-  const inputData = document.getElementsByClassName('form-field');
-  for (let i = 0; i < inputData.length; i += 1) {
-    inputData[i].addEventListener('keydown', () => {
-      const userData = {
-        name: form.elements.userName.value,
-        mail: form.elements.userEmail.value,
-        message: form.elements.userMessage.value,
-      };
-      localStorage.setItem('user-data', JSON.stringify(userData));
-    });
-  }
-  // Retrieve data from local storage
-  if (localStorage.getItem('user-data') !== null) {
-    const userdata = JSON.parse(localStorage.getItem('user-data'));
-    form.elements.userName.value = userdata.name;
-    form.elements.userEmail.value = userdata.mail;
-    form.elements.userMessage.value = userdata.message;
-  }
 });
