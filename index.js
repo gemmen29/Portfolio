@@ -64,8 +64,8 @@ window.addEventListener('DOMContentLoaded', () => {
         'Website about online course academy built with HTML, CSS, and Javascript',
       featuredImage: 'images/show.png',
       technologies: ['html', 'css', 'javascript', 'bootstrap', 'sass', 'api'],
-      liveVersion: 'https://gemmen29.github.io/Module1-Capstone/',
-      source: 'https://github.com/gemmen29/Module1-Capstone',
+      liveVersion: 'https://gemmen29.github.io/show-app/',
+      source: 'https://github.com/gemmen29/show-app',
     },
     {
       name: 'Online Courses Website',
@@ -73,8 +73,8 @@ window.addEventListener('DOMContentLoaded', () => {
         'Website about online course academy built with HTML, CSS, and Javascript',
       featuredImage: 'images/capstone.png',
       technologies: ['html', 'css', 'javascript', 'bootstrap'],
-      liveVersion: 'https://gemmen29.github.io/Module1-Capstone/',
-      source: 'https://github.com/gemmen29/Module1-Capstone',
+      liveVersion: 'https://gemmen29.github.io/Online-Courses-Website/',
+      source: 'https://github.com/gemmen29/Online-Courses-Website',
     },
     {
       name: 'Awesome Books',
@@ -136,6 +136,8 @@ window.addEventListener('DOMContentLoaded', () => {
       const projectDescription = projectModal.querySelector('p.dis--');
       const technologiesUL = projectModal.querySelector('ul#technologies');
       const projectImage = projectModal.querySelector('img.project-image');
+      const seeLiveBtn = projectModal.querySelector('#see-live');
+      const seeSourceBtn = projectModal.querySelector('#see-source');
 
       const projectId = e.target.getAttribute('data-projectId');
 
@@ -152,17 +154,14 @@ window.addEventListener('DOMContentLoaded', () => {
         technologiesUL.appendChild(li);
       });
 
+      seeLiveBtn.href = projects[projectId].liveVersion;
+      seeSourceBtn.href = projects[projectId].source;
+
       projectModal.classList.remove('d-none');
-      for (let index = 0; index < allBlur.length; index += 1) {
-        allBlur[index].classList.add('blur-see-project-modal');
-      }
     });
   }
 
   closeProjectModal.addEventListener('click', () => {
     projectModal.classList.add('d-none');
-    for (let index = 0; index < allBlur.length; index += 1) {
-      allBlur[index].classList.remove('blur-see-project-modal');
-    }
   });
 });
