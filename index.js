@@ -29,46 +29,36 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const projects = [
     {
-      name: 'Module1 Capstone',
+      name: 'Show app',
       description:
-        'This is the first module capstone project in microverse',
+        'Website about online course academy built with HTML, CSS, and Javascript',
+      featuredImage: 'images/show.png',
+      technologies: ['html', 'css', 'javascript', 'bootstrap', 'sass', 'api'],
+      liveVersion: 'https://gemmen29.github.io/Module1-Capstone/',
+      source: 'https://github.com/gemmen29/Module1-Capstone',
+    },
+    {
+      name: 'Online Courses Website',
+      description:
+        'Website about online course academy built with HTML, CSS, and Javascript',
       featuredImage: 'images/capstone.png',
-      technologies: [
-        'html',
-        'css',
-        'javascript',
-        'bootstrap',
-      ],
+      technologies: ['html', 'css', 'javascript', 'bootstrap'],
       liveVersion: 'https://gemmen29.github.io/Module1-Capstone/',
       source: 'https://github.com/gemmen29/Module1-Capstone',
     },
     {
       name: 'Awesome Books',
-      description:
-        'Basic website for add and remove books',
+      description: 'Basic website for add and remove books',
       featuredImage: 'images/awesome.png',
-      technologies: [
-        'html',
-        'css',
-        'javascript',
-        'bootstrap',
-
-      ],
+      technologies: ['html', 'css', 'javascript', 'bootstrap'],
       liveVersion: 'https://gemmen29.github.io/Awesome-Book/',
       source: 'https://github.com/gemmen29/Awesome-Book',
     },
     {
       name: 'ToDo List',
-      description:
-        'This is a website for managing the daily tasks',
+      description: 'This is a website for managing the daily tasks',
       featuredImage: 'images/todo.png',
-      technologies: [
-        'html',
-        'css',
-        'javascript',
-        'webpacks',
-        'jest',
-      ],
+      technologies: ['html', 'css', 'javascript', 'webpacks', 'jest'],
       liveVersion: 'https://gemmen29.github.io/ToDo-List/dist/',
       source: 'https://github.com/gemmen29/ToDo-List',
     },
