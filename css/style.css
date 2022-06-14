@@ -272,7 +272,6 @@ header a {
 .project img {
   border-radius: 8px;
   height: 220px;
-  object-fit: cover;
 }
 
 .project ul {
@@ -674,4 +673,9 @@ button[disabled] {
   padding: 4px 12px;
   border-radius: 8px;
   color: #6070ff;
+}
+
+.project-img-container {
+  display: flex;
+  justify-content: center;
 }
