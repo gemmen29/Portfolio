@@ -61,9 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const createProject = (project, index) => {
     return `<div class="project">
-    <img class="scaled" src="${
-      project.featuredImage
-    }" alt="Module1 Capstone screenshot">
+    <img class="scaled" src="${project.featuredImage}" alt="${project.name}">
     <div class="project-body">
       <h2 class="project-title">${project.name}</h2>
       <div class="project-sub-header">
