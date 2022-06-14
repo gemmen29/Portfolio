@@ -1,5 +1,21 @@
 const projects = [
   {
+    name: 'Hotelzilla',
+    description:
+      'Hotelzilla is a web application that allows users to book hotel rooms and view the status of their reservations.',
+    featuredImage: 'images/hotelzilla.png',
+    technologies: [
+      'ruby',
+      'ruby on rails',
+      'postgres',
+      'react',
+      'redux',
+      'tailwindcss',
+    ],
+    liveVersion: 'https://hotelzilla.netlify.app/',
+    source: 'https://github.com/gemmen29/Hotelzilla-UI',
+  },
+  {
     name: 'Budget App',
     description:
       'The Budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
