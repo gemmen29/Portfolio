@@ -1,3 +1,4 @@
+import projects from './projects.js';
 window.addEventListener('DOMContentLoaded', () => {
   /* Mobile menu */
   const menuIcon = document.getElementById('menu-icon');
@@ -57,45 +58,8 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   // Create projects dynamically
-  const projects = [
-    {
-      name: 'Show app',
-      description:
-        'Website about online course academy built with HTML, CSS, and Javascript',
-      featuredImage: 'images/show.png',
-      technologies: ['html', 'css', 'javascript', 'bootstrap', 'sass', 'api'],
-      liveVersion: 'https://gemmen29.github.io/show-app/',
-      source: 'https://github.com/gemmen29/show-app',
-    },
-    {
-      name: 'Online Courses Website',
-      description:
-        'Website about online course academy built with HTML, CSS, and Javascript',
-      featuredImage: 'images/capstone.png',
-      technologies: ['html', 'css', 'javascript', 'bootstrap'],
-      liveVersion: 'https://gemmen29.github.io/Online-Courses-Website/',
-      source: 'https://github.com/gemmen29/Online-Courses-Website',
-    },
-    {
-      name: 'Awesome Books',
-      description: 'Basic website for add and remove books',
-      featuredImage: 'images/awesome.png',
-      technologies: ['html', 'css', 'javascript', 'bootstrap'],
-      liveVersion: 'https://gemmen29.github.io/Awesome-Book/',
-      source: 'https://github.com/gemmen29/Awesome-Book',
-    },
-    {
-      name: 'ToDo List',
-      description: 'This is a website for managing the daily tasks',
-      featuredImage: 'images/todo.png',
-      technologies: ['html', 'css', 'javascript', 'webpacks', 'jest'],
-      liveVersion: 'https://gemmen29.github.io/ToDo-List/dist/',
-      source: 'https://github.com/gemmen29/ToDo-List',
-    },
-  ];
 
   const createProject = (project, index) => {
-    console.log(project.technologies);
     return `<div class="project">
     <img class="scaled" src="${
       project.featuredImage
