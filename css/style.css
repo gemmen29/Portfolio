@@ -15,104 +15,13 @@ body {
   background-color: #f7f7f9;
 }
 
-/* Popup style */
-.see-por {
-  position: fixed;
-  padding-top: 6vh;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 50;
-  background: #c1c7d0cb;
-}
-
-.see-por .project-modal-content {
-  border-radius: 16px;
-  background: #fff;
-  width: 90%;
-  height: 88vh;
-  padding: 15px;
-  margin: 0 auto;
-  overflow-y: auto;
-}
-
-.see-pro-head {
+.see-pro-btns {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.see-por h3 {
-  margin: 0;
-  padding-top: 20px;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
-}
-
-.see-por .project-sub-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 260px;
-  font-weight: 600;
-  color: #344563;
-  padding: 0 2px;
-}
-
-.see-por .sub-different-color {
-  color: #7a869a;
-}
-
-.see-por .bullet {
-  font-size: 30px;
-}
-
-.see-por .img100 {
-  border-radius: 8px;
-  width: 100%;
-  height: 30vh;
-}
-
-.disk-ver p {
-  overflow-y: auto;
-  text-align: justify;
-  padding: 4px 8px;
-}
-
-.ather-div {
-  margin-top: 15px;
-}
-
-#technologies li.ppp:nth-child(n + 4) {
-  display: none;
-}
-
-.see-por .see-pro-btns {
-  display: flex;
-  justify-content: space-around;
   margin-top: 20px;
   align-items: center;
   padding: 2px;
-}
-
-#project-modal .modal-line {
-  border-top: 1px solid #ebecf0;
-}
-
-.see-por .see-pro-btns button {
-  padding: 0 7px;
-  width: auto;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
+  gap: 5px;
   justify-content: center;
-}
-
-.blur-see-project-modal {
-  backdrop-filter: blur(5px);
 }
 
 /* Nav style */
@@ -248,6 +157,7 @@ header a {
 /* My Projects section style */
 .my-projects {
   display: grid;
+  justify-content: center;
   grid-row-gap: 88px;
   padding-top: 88px;
   padding-bottom: 88px;
@@ -259,8 +169,8 @@ header a {
   border-radius: 16px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 16px;
-  margin: 0 auto;
   width: 90vw;
 }
 
@@ -269,9 +179,15 @@ header a {
   flex-direction: column;
 }
 
+.project-image {
+  width: 80%;
+  max-height: 50vh;
+  overflow: hidden;
+}
+
 .project img {
+  width: 100%;
   border-radius: 8px;
-  height: 220px;
 }
 
 .project ul {
