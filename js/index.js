@@ -61,7 +61,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const createProject = (project, index) => {
     return `<div class="project">
-    <img class="scaled" src="${project.featuredImage}" alt="${project.name}">
+    <div class="project-image">
+      <img class="scaled" src="${project.featuredImage}" alt="${project.name}">
+    </div>
     <div class="project-body">
       <h2 class="project-title">${project.name}</h2>
       <div class="project-sub-header">
@@ -77,7 +79,22 @@ window.addEventListener('DOMContentLoaded', () => {
       <ul>
       ${project.technologies.map((tech) => `<li>${tech}</li>`).join(' ')}
       </ul>
-      <a data-projectId='${index}' class="see-pro-btn main-button">See Project</a>
+      <div class="see-pro-btns">
+        <a href="${
+          project.liveVersion
+        }" id="see-live" target="_blank" class="button-style">
+          See Live
+          &nbsp;
+          <i class="fa-solid fa-arrows-rotate fa-lg"></i>
+        </a>
+        <a href="${
+          project.source
+        }" id="see-source" target="_blank" class="button-style">
+          See Source
+          &nbsp;
+          <i class="fa-solid fa-eye fa-lg"></i>
+        </a>
+      <div>
     </div>
   </div>`;
   };
@@ -85,45 +102,5 @@ window.addEventListener('DOMContentLoaded', () => {
   const portofilo = document.querySelector('#protofilo');
   projects.forEach((project, index) => {
     portofilo.innerHTML += createProject(project, index);
-  });
-
-  /* Modal popup */
-  const seeProjects = document.getElementsByClassName('see-pro-btn');
-  const projectModal = document.getElementById('project-modal');
-  const closeProjectModal = document.getElementById('close-project-modal');
-
-  for (let index = 0; index < seeProjects.length; index += 1) {
-    seeProjects[index].addEventListener('click', (e) => {
-      const projectTitle = projectModal.querySelector('h3#project-header');
-      const projectDescription = projectModal.querySelector('p.dis--');
-      const technologiesUL = projectModal.querySelector('ul#technologies');
-      const projectImage = projectModal.querySelector('img.project-image');
-      const seeLiveBtn = projectModal.querySelector('#see-live');
-      const seeSourceBtn = projectModal.querySelector('#see-source');
-
-      const projectId = e.target.getAttribute('data-projectId');
-
-      projectTitle.textContent = projects[projectId].name;
-      projectDescription.textContent = projects[projectId].description;
-      projectImage.src = projects[projectId].featuredImage;
-
-      technologiesUL.innerHTML = '';
-      projects[projectId].technologies.forEach((project) => {
-        const li = document.createElement('li');
-        li.classList.add('technology-list');
-        const liText = document.createTextNode(project);
-        li.appendChild(liText);
-        technologiesUL.appendChild(li);
-      });
-
-      seeLiveBtn.href = projects[projectId].liveVersion;
-      seeSourceBtn.href = projects[projectId].source;
-
-      projectModal.classList.remove('d-none');
-    });
-  }
-
-  closeProjectModal.addEventListener('click', () => {
-    projectModal.classList.add('d-none');
   });
 });
