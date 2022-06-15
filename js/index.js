@@ -66,13 +66,6 @@ window.addEventListener('DOMContentLoaded', () => {
     </div>
     <div class="project-body">
       <h2 class="project-title">${project.name}</h2>
-      <div class="project-sub-header">
-        <span>CANOPY</span>
-        <span class="sub-different-color bullet">•</span>
-        <span class="sub-different-color">Back End Dev</span>
-        <span class="sub-different-color bullet">•</span>
-        <span class="sub-different-color">2015</span>
-      </div>
       <p>
         ${project.description}
       </p>
