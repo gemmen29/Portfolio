@@ -286,6 +286,13 @@ header a {
   margin-left: 15px;
 }
 
+.about .about-info {
+  flex-direction: column;
+  gap: 5px;
+  list-style: disc;
+  padding: 20px;
+}
+
 .about .header .resume-button {
   padding: 12px;
   width: 162px;
