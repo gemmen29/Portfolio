@@ -357,10 +357,9 @@ header a {
 .about .my-technologies .content div {
   display: flex;
   align-items: center;
-  height: 66.72px;
-  background-color: #f7f7f9;
+  background-color: #e1dfdfe0;
   border-radius: 8px;
-  padding: 0 14px;
+  padding: 10px 14px;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 500;
