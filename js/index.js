@@ -1,4 +1,8 @@
 import projects from './projects.js';
+import frontendTechnologies from './front-end.js';
+import backendTechnologies from './back-end.js';
+import tools from './tools.js';
+
 window.addEventListener('DOMContentLoaded', () => {
   /* Mobile menu */
   const menuIcon = document.getElementById('menu-icon');
@@ -75,5 +79,78 @@ window.addEventListener('DOMContentLoaded', () => {
   const portofilo = document.querySelector('#protofilo');
   projects.forEach((project, index) => {
     portofilo.innerHTML += createProject(project, index);
+  });
+
+  // load technologies dynamically
+
+  const loadTechnology = (name, techList) => {
+    return `        
+ <li>
+    <div class="item">
+      <h3>${name}</h3>
+      <img class="open-technology-list" src="images/Right-arrow.svg">
+    </div>
+    <ul class="d-none-important my-various-technologies">
+      ${techList
+        .map(
+          (tech) =>
+            `<li class="content">
+          <div>
+            <img src="${tech.image}" alt="${tech.name}">
+            <h4>${tech.name}</h4>
+          </div>
+        </li>`
+        )
+        .join(' ')}
+    </ul>
+  </li>`;
+  };
+
+  document.querySelector('.my-technologies').innerHTML += loadTechnology(
+    'Front-End',
+    frontendTechnologies
+  );
+  document.querySelector('.my-technologies').innerHTML += loadTechnology(
+    'Back-End',
+    backendTechnologies
+  );
+  document.querySelector('.my-technologies').innerHTML += loadTechnology(
+    'Tools',
+    tools
+  );
+
+  // display front-end technologies by default
+  document
+    .querySelector('.my-various-technologies')
+    .classList.remove('d-none-important');
+  document.querySelector('.open-technology-list').src = 'images/Down-arrow.svg';
+
+  // open and close technologies
+  document.querySelectorAll('.open-technology-list').forEach((icon) => {
+    icon.addEventListener('click', (e) => {
+      const pathArr = e.target.src.split('/');
+      const currentState = pathArr[pathArr.length - 1] == 'Down-arrow.svg';
+
+      // reset all list of technologies
+      document
+        .querySelectorAll('.my-various-technologies')
+        .forEach((tech) => tech.classList.add('d-none-important'));
+      document
+        .querySelectorAll('.open-technology-list')
+        .forEach((list) => (list.src = 'images/Right-arrow.svg'));
+
+      // open the specific list of technology
+      if (currentState) {
+        e.target.src = 'images/Right-arrow.svg';
+        e.target.parentElement.nextElementSibling.classList.add(
+          'd-none-important'
+        );
+      } else {
+        e.target.src = 'images/Down-arrow.svg';
+        e.target.parentElement.nextElementSibling.classList.remove(
+          'd-none-important'
+        );
+      }
+    });
   });
 });
