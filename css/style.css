@@ -343,7 +343,7 @@ header a {
 
 .about .my-technologies ul {
   margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 
 .about .my-technologies .content {
