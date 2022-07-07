@@ -300,11 +300,14 @@ header a {
   margin-top: 20px;
 }
 
-.about .languages {
-  display: grid;
+.about .my-technologies {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  list-style: none;
 }
 
-.about .languages .item {
+.about .my-technologies .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -312,38 +315,38 @@ header a {
   height: 72px;
 }
 
-.about .languages .item h3 {
+.about .my-technologies .item h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
   font-weight: 500;
   line-height: 24px;
 }
 
-.about .languages .item .down-arrow {
+.about .my-technologies .item .down-arrow {
   width: 14px;
   height: 8px;
   color: #505f79;
 }
 
-.about .languages .item .right-arrow {
+.about .my-technologies .item .right-arrow {
   width: 8px;
   height: 14px;
   color: #505f79;
 }
 
-.about .languages hr {
+.about .my-technologies hr {
   color: #dfe1e6;
   height: 1px;
   margin: 2px 30px;
   text-align: center;
 }
 
-.about .languages ul {
+.about .my-technologies ul {
   margin: 0;
   padding: 0;
 }
 
-.about .languages .content {
+.about .my-technologies .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -351,7 +354,7 @@ header a {
   margin: 0 24px;
 }
 
-.about .languages .content div {
+.about .my-technologies .content div {
   display: flex;
   align-items: center;
   height: 66.72px;
@@ -362,6 +365,7 @@ header a {
   font-size: 15px;
   font-weight: 500;
   color: #253858;
+  gap: 10px;
 }
 
 /* Footer section style */
@@ -601,4 +605,12 @@ button[disabled] {
 .project-img-container {
   display: flex;
   justify-content: center;
+}
+
+.open-technology-list {
+  cursor: pointer;
+}
+
+.d-none-important {
+  display: none !important;
 }
